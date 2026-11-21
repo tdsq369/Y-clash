@@ -23,12 +23,14 @@
 https://cdn.jsdelivr.net/gh/tdsq369/Y-clash@main/rules/direct.list
 ```
 
-## 仍需同步的现役引用
+## 同步状态（2026-11-21）
 
-本地这两处此前指向 CNB 旧地址，需要改成上面的 GitHub 地址：
-
-- `/root/.hermes/gongju/cf-youxuan/cfctl.py` → `FINAL_ROUTER_URL`
-- `/root/mihomo-lab/scripts/validate_369696_direct_latest.py` → `RAW`
+| 位置 | 处理 |
+|---|---|
+| `cf-youxuan/cfctl.py` → `FINAL_ROUTER_URL` 的 `config=` | 已改为本库 raw，改前备份 `~/.hermes/memories/backups/20261121-153022-yclash-gh-migration/` |
+| `mihomo-lab/scripts/validate_369696_direct_latest.py` → `RAW` | 已改为本库 raw，同上备份 |
+| 路由器 `/etc/openclash/*.yaml` 与 `config/*.yaml` 共 19 个文件 | 已把 CNB raw 全部替换为本库 raw；`block` provider 另改为 `openclash/block.yaml`（原指 `rules/block.list` 语法不匹配，ruleCount 恒为 0）。备份 `router:/root/yclash-migrate/20261121-153057-openclash-yaml.tar.gz` |
+| CF Worker `SUBCONFIG` 环境变量 | **未改**：该 Worker 需 account 级 token，本机只有 zone 级 token。若你的客户端走不带 `config=` 的地址，需在 CF Dashboard 把它改成 `https://raw.githubusercontent.com/tdsq369/Y-clash/main/worker.ini` |
 
 ## 维护规矩
 
