@@ -24,7 +24,6 @@
 +.bambulab.com
 +.369163.xyz
 +.369529.xyz
-+.369696.xyz
 +.cn.wzjself.org
 +.180txt.cn
 # --- 微信朋友圈 / 视频资源（防止广告规则误拦缩略图） ---
