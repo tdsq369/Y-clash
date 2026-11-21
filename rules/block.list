@@ -5,12 +5,7 @@
 # ============================================================================
 
 # --- VR 设备更新/日志拦截 ---
+# 2026-11-21：字节跳动广告/监控 5 条（ad.toutiao.com / ad.byteali.com / dm.bytedance.com /
+# is.snssdk.com / mon.isnssdk.com）按用户要求移除——该族曾被证实会连带打断抖音长连接。
 DOMAIN-SUFFIX,america.vrdesktop.net
 DOMAIN-SUFFIX,europe.vrdesktop.net
-
-# --- 字节跳动广告与监控 ---
-DOMAIN-SUFFIX,ad.toutiao.com
-DOMAIN-SUFFIX,ad.byteali.com
-DOMAIN-SUFFIX,dm.bytedance.com
-DOMAIN-SUFFIX,is.snssdk.com
-DOMAIN-SUFFIX,mon.isnssdk.com
