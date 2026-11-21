@@ -1,0 +1,85 @@
+# 搜索 API 规则集
+# 创建时间: 2026-08-16
+# 说明: AI 搜索系统使用的 API 域名，按访问需求分类
+
+payload:
+  # ============================================
+  # 直连规则 (国内服务)
+  # ============================================
+  # 百度千帆 AI 搜索 - 国内服务，直连速度快
+  - "+.qianfan.baidubce.com"
+  - "+.baidubce.com"
+
+  # 秘塔搜索 - 国内 AI 搜索引擎
+  - "+.metaso.cn"
+
+  # Bocha 博查 - 国内搜索 API
+  - "+.bochaai.com"
+
+  # ============================================
+  # 代理规则 (国外服务)
+  # ============================================
+  # Brave Search - SSL 连接失败，必须代理
+  - "+.api.search.brave.com"
+  - "+.search.brave.com"
+  - "+.brave.com"
+
+  # Parallel Search - 国外服务
+  - "+.search.parallel.ai"
+  - "+.parallel.ai"
+
+  # DuckDuckGo - 国外搜索引擎
+  - "+.duckduckgo.com"
+  - "+.duck.co"
+
+  # You.com - 国外 AI 搜索
+  - "+.ydc-index.io"
+  - "+.you.com"
+
+  # SerpApi - Google 搜索代理
+  - "+.serpapi.com"
+
+  # Exa - 神经搜索引擎
+  - "+.api.exa.ai"
+  - "+.exa.ai"
+
+  # Serper - Google 搜索 API
+  - "+.google.serper.dev"
+  - "+.serper.dev"
+
+  # Tavily - AI 搜索 API
+  - "+.api.tavily.com"
+  - "+.tavily.com"
+
+  # Firecrawl - 搜索+爬取
+  - "+.api.firecrawl.dev"
+  - "+.firecrawl.dev"
+
+  # scrape.do - 网页爬取
+  - "+.api.scrape.do"
+  - "+.scrape.do"
+
+  # Linkup - 搜索 API
+  - "+.getsearch.linkup.so"
+  - "+.linkup.so"
+
+  # Anysearch - 多源聚合搜索
+  - "+.api.anysearch.com"
+  - "+.anysearch.com"
+
+  # ============================================
+  # 专项搜索 (按需代理)
+  # ============================================
+  # PanSou 网盘聚合 - 可能需要代理
+  - "+.pansou.com"
+
+  # 觅盘 - 国内网盘搜索
+  - "+.mipan.so"
+
+  # 喵盘 - 国内网盘搜索
+  - "+.miaopan.cc"
+
+  # TG 搜索相关
+  - "+.tgramsearch.com"
+  - "+.tgstat.com"
+  - "+.telegago.com"

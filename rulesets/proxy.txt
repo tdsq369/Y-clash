@@ -1,0 +1,400 @@
+# Y-clash 代理规则（domain）
+# 源: rules/proxy.list
+# 格式: mihomo rule-provider (behavior=domain, format=text)
+# 语法: '+.example.com' 等价 DOMAIN-SUFFIX,example.com
+
+# ============================================================================
+# 代理规则 (proxy.list)
+# 用途: 走代理的域名
+# 来源: Y-clash dl.list + Yjhermes 需VPN的BT站点 + Aethersailor PT规则
+# 更新: AI 自动维护，人工可通过 PR 补充
+# ============================================================================
+# --- 搜索 API - 国外服务 (需代理) ---
+# Brave Search - SSL 连接失败，必须代理
++.api.search.brave.com
++.search.brave.com
++.brave.com
+# Parallel Search - 国外服务
++.search.parallel.ai
++.parallel.ai
+# DuckDuckGo - 国外搜索引擎
++.duckduckgo.com
++.duck.co
+# You.com - 国外 AI 搜索
++.ydc-index.io
++.you.com
+# SerpApi - Google 搜索代理
++.serpapi.com
+# Exa - 神经搜索引擎
++.api.exa.ai
++.exa.ai
+# Serper - Google 搜索 API
++.google.serper.dev
++.serper.dev
+# Tavily - AI 搜索 API
++.api.tavily.com
++.tavily.com
+# Firecrawl - 搜索+爬取
++.api.firecrawl.dev
++.firecrawl.dev
+# scrape.do - 网页爬取
++.api.scrape.do
++.scrape.do
+# Linkup - 搜索 API
++.getsearch.linkup.so
++.linkup.so
+# Anysearch - 多源聚合搜索
++.api.anysearch.com
++.anysearch.com
+# TG 搜索相关
++.tgramsearch.com
++.tgstat.com
++.telegago.com
+# 网盘搜索
++.pansou.com
++.mipan.so
++.miaopan.cc
+# --- 搜索 API - 国外服务结束 ---
+# --- VRChat 核心业务 ---
++.vrchat.com
++.vrchat.cloud
++.vrc.sh
++.api.vrchat.cloud
++.pipeline.vrchat.cloud
+# --- VRChat 资源与 CDN ---
++.assets.vrchat.com
++.akamaized.net
+# --- VRChat 视频播放器 ---
++.vrcdn.live
++.vrcdn.video
++.vrcdn.cloud
++.topaz.chat
++.ttvnw.net
+# --- Bybit 官方网站、REST API 与 WebSocket ---
+# 官方文档：api/stream.bybit.com；区域入口见 Bybit V5 API 文档。
++.bybit.com
++.bytick.com
++.bybit.kz
++.bybit.tr
++.bybit.id
++.bybitgeorgia.ge
++.manepa.jp
++.bybit.eu
+# 设备运行日志已观察到的 Bybit 应用精确 API/WS 入口；不扩展为整个 .biz 后缀。
+api3.bybit.biz
+ws2.bybit.biz
+# --- 通用代理站 ---
++.audiomack.com
++.api.audiomack.com
++.truthsocial.com
++.mozilla.org
++.tactics.tools
++.simplex.chat
++.edtunnel.best
++.workers.dev
++.v2rayssr.com
++.cults3d.com
++.tripo3d.ai
++.theyashotel.com
++.archive.is
++.softonic.cn
++.reddit.com
++.greasyfork.org
++.linux.do
++.xdaforums.com
++.fast.com
++.ip.sb
++.techpowerup.com
++.4kvm.org
+# ============================================================================
+# BT / 磁力搜索 (国际热门，需代理)
+# 来源: Yjhermes 需VPN的BT站点
+# ============================================================================
++.1337x.to
++.1337x.eu
++.1337x.gd
++.1337x.is
++.1337x.se
++.1337x.so
++.1337x.st
++.1337x.ws
++.yts.mx
++.torrentgalaxy.to
++.torrentgalaxy.mx
++.kickasstorrents.to
++.kickass.to
++.kickasst.to
++.rarbg.to
++.rarbg.me
++.iptorrents.com
+# ============================================================================
+# BT / 磁力搜索 (中文站备用域名，部分需代理)
+# 来源: Yjhermes 需VPN的BT站点
+# ============================================================================
++.btbtdy.com
++.bttiantang.com
++.cilimao.net
++.clg.im
++.ciligou.top
++.torrentkitty.app
++.laowangfb.top
++.bthaha.buzz
++.xiongmao36.xyz
++.sobt.io
++.btmovi.co
++.clttt.xyz
+# ============================================================================
+# BT / 磁力搜索 API 源
+# ============================================================================
++.apibay.org
++.magnetz.eu
++.bitsearch.to
++.bitsearch.eu
++.knaben.org
++.torrents-csv.com
++.cilimo.com
++.accel.li
++.animetosho.org
++.ibit.to
+# ============================================================================
+# BT / RSS / Torznab 源
+# ============================================================================
++.dmhy.org
++.dmhy.net
++.share.dmhy.org
++.showrss.info
++.eztvx.to
++.eztv.re
++.eztv.ag
++.eztv.ch
++.eztv.it
++.eztv.yt
++.nyaa.si
++.nyaa.net
++.nyaa.land
++.sukebei.nyaa.si
+# ============================================================================
+# BT / 磁力搜索站点
+# ============================================================================
++.btdig.com
++.btdb.io
++.btdb.eu
++.btdb.to
++.bt4g.org
++.bt4g.com
++.btsec.org
++.btbtt.me
++.btgiga.cc
++.bts.im
++.solidtorrents.to
++.solidtorrents.co
++.solidtorrents.net
++.torrentz2.nz
++.torrentdownloads.me
++.limetorrents.eu
++.limetorrents.cc
++.thepiratebay.org
++.thepiratebay.zone
++.piratebay.party
++.pirateproxy.live
++.torlock.com
++.torlock2.com
++.glodls.to
++.gtdb.to
++.glotorrents.to
++.magnet-dl.com
++.magnetdl.com
++.isohunt.nz
++.isohunt.to
+# ============================================================================
+# 俄区 / 老牌 BT / PT
+# ============================================================================
++.rutracker.org
++.rutracker.net
++.rutracker.ru
++.rutor.info
++.rutor.is
++.nnm-club.me
++.nnmclub.to
++.kinozal.guru
++.kinozal.me
++.kinozal.tv
+# ============================================================================
+# 动漫 / ACG 资源站
+# ============================================================================
++.mikanani.me
++.acg.rip
++.bangumi.moe
++.bangumi.tv
++.bgm.tv
++.anidb.net
++.anilist.co
++.kitsu.io
++.myanimelist.net
++.tokyotosho.info
++.subsplease.org
++.shanaproject.com
+# ============================================================================
+# 影视 / 字幕 / 媒体
+# ============================================================================
++.yts.mx
++.psarips.to
++.pahe.in
++.pahe.li
++.themoviedb.org
++.tmdb.org
++.thetvdb.com
++.imdb.com
++.fanart.tv
++.opensubtitles.com
++.opensubtitles.org
++.subscene.com
++.pianyuan.la
+# ============================================================================
+# 游戏 / Repacks
+# ============================================================================
++.fitgirl-repacks.co
++.fitgirl-repacks.site
++.dodi-repack.site
++.skidrowreloaded.com
++.gog-games.com
++.gog-games.to
++.igg-games.com
++.steamrip.com
+# ============================================================================
+# 学术 / Linux Torrents
+# ============================================================================
++.academictorrents.com
++.linuxtracker.org
++.distroshare.com
++.fosshub.com
+# ============================================================================
+# 常见 Tracker 域名
+# ============================================================================
++.opentrackr.org
++.open.stealth.si
++.stealth.si
++.dler.org
++.tracker.dler.org
++.torrent.eu.org
++.arenabg.com
++.coppersurfer.tk
++.explodie.org
++.desync.com
++.demonii.si
++.mgtracker.org
++.publictracker.xyz
++.tracker.openbittorrent.com
++.tracker.opentrackr.org
++.tracker.torrent.eu.org
++.open.trackerlist.xyz
++.nyaa.tracker.wf
++.bt.poletracker.org
++.torrentclub.online
++.torrentsmd.com
+# ============================================================================
+# 自定义代理域名
+# ============================================================================
+so.252035.xyz
+# idcflare: 强制走代理，规避错误 DNS/IPv6/漏网之鱼导致证书 CN 不匹配
++.idcflare.com
+# Pico XR/VR 全平台走代理（线上+线下）
++.picoxr.com
++.picovr.com
+# IProyal: 代理平台，走代理访问
++.iproyal.cn
+# ============================================================================
+# 社交 / 聊天软件 (需代理)
+# 来源: danuhdw/openclash-config + helmiau/clashrules + 综合整理
+# ============================================================================
+# --- Facebook + Messenger ---
++.facebook.com
++.facebook.net
++.fbcdn.net
++.fb.com
++.fbcdn.com
++.fbsbx.com
++.fbwat.ch
++.fb.watch
++.messenger.com
++.m.me
++.facebookmail.com
++.internet.org
+# --- Instagram ---
++.instagram.com
++.cdninstagram.com
++.ig.me
+# --- X / Twitter ---
++.x.com
++.twitter.com
++.t.co
++.twimg.com
++.twttr.com
++.twitteroauth.com
++.twitterstat.us
+# --- WhatsApp ---
++.whatsapp.com
++.whatsapp.net
++.wa.me
++.whatsapp.cc
+# --- Discord ---
++.discord.com
++.discord.gg
++.discordapp.com
++.discordapp.net
++.discord.media
++.discordcdn.com
+# --- Signal ---
++.signal.org
++.whispersystems.org
++.signal.art
+# --- Line ---
++.line.me
++.line-apps.com
++.line-scdn.net
++.line.naver.jp
++.liffsdk.line-scdn.net
+# --- Skype ---
++.skype.com
++.skype.net
++.sfbassets.com
++.lync.com
+# --- Snapchat ---
++.snapchat.com
++.snap.com
++.sc-cdn.net
++.sc-jpl.com
+# --- TikTok (国际版) ---
++.tiktok.com
++.tiktokcdn.com
++.tiktokv.com
++.musical.ly
++.byteoversea.com
++.ibytedtos.com
++.pstatp.com
+# --- Threads ---
++.threads.net
+# AgentRouter: AI 路由服务，走代理访问
++.agentrouter.org
+# --- Manus AI（官方站点/API） ---
++.manus.im
++.open.manus.ai
+# --- PikPak 云盘（官方域名 + API + 迅雷CDN + 下载CDN关键词） ---
+# 核心域名（含 access/api/config/user 等子域）
++.mypikpak.com
++.mypikpak.net
++.pikpak.me
++.pikpakdrive.com
++.pikpak.io
++.pickpackapp.com
+# 迅雷 CDN 节点（PikPak 离线下载底层依赖迅雷）
++.dlandroid.rcv.sandai.net
++.hub5idx.v6.shub.sandai.net
++.hub5pn.wap.sandai.net
++.hub5pnc.sandai.net
++.hub5pr.v6.phub.sandai.net
++.hubciddata.sandai.net
+# 下载 CDN 关键词（PikPak 离线下载完成后的文件分发域名）
+# --- GoFile 文件分享/网盘（官方域 + CDN 子域 + 上传下载节点） ---
++.gofile.io
++.gofile.com

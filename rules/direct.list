@@ -1,0 +1,61 @@
+# ============================================================================
+# 直连规则 (direct.list)
+# 用途: 不走代理的域名 (国内/局域网/特殊服务)
+# 更新: AI 自动维护
+# ============================================================================
+
+# --- 搜索 API - 国内服务 (直连) ---
+# 百度千帆 AI 搜索 - 国内服务，直连速度快
+DOMAIN-SUFFIX,qianfan.baidubce.com
+DOMAIN-SUFFIX,baidubce.com
+# 秘塔搜索 - 国内 AI 搜索引擎
+DOMAIN-SUFFIX,metaso.cn
+# Bocha 博查 - 国内搜索 API
+DOMAIN-SUFFIX,bochaai.com
+# --- 搜索 API - 国内服务结束 ---
+
+# --- 局域网 / 内网服务 ---
+DOMAIN-SUFFIX,signalr.net
+DOMAIN-SUFFIX,service.signalr.net
+DOMAIN-SUFFIX,jxemall.com
+DOMAIN-SUFFIX,bambulab.com
+DOMAIN-SUFFIX,369163.xyz
+DOMAIN-SUFFIX,369529.xyz
+DOMAIN-SUFFIX,369696.xyz
+DOMAIN-SUFFIX,cn.wzjself.org
+DOMAIN-SUFFIX,180txt.cn
+
+# --- 微信朋友圈 / 视频资源（防止广告规则误拦缩略图） ---
+DOMAIN-SUFFIX,wxsnsdythumb.wxs.qq.com
+DOMAIN-SUFFIX,wxsnsdy.wxs.qq.com
+DOMAIN-SUFFIX,wxs.qq.com
+
+# --- 国内高校 BT 站 (直连) ---
+DOMAIN-SUFFIX,bt.byr.cn
+DOMAIN-SUFFIX,bt.dlut.edu.cn
+DOMAIN-SUFFIX,bt.huawei.com
+DOMAIN-SUFFIX,btbtt.11.com
+DOMAIN-SUFFIX,camoe.cn
+DOMAIN-SUFFIX,hao4k.cn
+DOMAIN-SUFFIX,hao4k.com
+DOMAIN-SUFFIX,hust.edu.cn
+DOMAIN-SUFFIX,lizi.tv
+
+DOMAIN-SUFFIX,video.qq.com
+DOMAIN-SUFFIX,v.qq.com
+DOMAIN-SUFFIX,qpic.cn
+DOMAIN-SUFFIX,qlogo.cn
+
+# --- Cloudflare 控制台（固化直连，避免漏网之鱼组被切节点时返回错证书） ---
+DOMAIN-SUFFIX,dash.cloudflare.com
+
+# --- 网易MuMu模拟器（更新/下载服务，直连避免代理干扰） ---
+DOMAIN-SUFFIX,mumu.nie.netease.com
+DOMAIN-SUFFIX,mumu.163.com
+DOMAIN-SUFFIX,nie.netease.com
+
+# --- 抖音/字节 关键服务直连（修复：广告规则集拦截 mcs.zijieapi 致卡死闪退；douyinbit CDN 误走代理） ---
+DOMAIN-SUFFIX,mcs.zijieapi.com
+DOMAIN-SUFFIX,pc-mon.zijieapi.com
+DOMAIN-SUFFIX,mon.zijieapi.com
+DOMAIN-SUFFIX,douyinbit.com

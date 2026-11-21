@@ -1,0 +1,79 @@
+# Y-clash 社交聊天规则（domain）
+# 源: rules/social-chat.list
+# 格式: mihomo rule-provider (behavior=domain, format=text)
+# 语法: '+.example.com' 等价 DOMAIN-SUFFIX,example.com
+
+# ============================================================================
+# 社交 / 聊天软件 (social-chat.list)
+# 用途: Facebook、WhatsApp、Instagram、X/Twitter、Discord、Signal、Line、Skype、Snapchat、TikTok、Threads
+# 来源: danuhdw/openclash-config + helmiau/clashrules + 综合整理
+# 策略组: 💬 WhatsApp Facebook及其他规则
+# 更新: AI 自动维护，人工可通过 PR 补充
+# ============================================================================
+# --- Facebook + Messenger ---
++.facebook.com
++.facebook.net
++.fbcdn.net
++.fb.com
++.fbcdn.com
++.fbsbx.com
++.fbwat.ch
++.fb.watch
++.messenger.com
++.m.me
++.facebookmail.com
++.internet.org
+# --- Instagram ---
++.instagram.com
++.cdninstagram.com
++.ig.me
+# --- X / Twitter ---
++.x.com
++.twitter.com
++.t.co
++.twimg.com
++.twttr.com
++.twitteroauth.com
++.twitterstat.us
+# --- WhatsApp ---
++.whatsapp.com
++.whatsapp.net
++.wa.me
++.whatsapp.cc
+# --- Discord ---
++.discord.com
++.discord.gg
++.discordapp.com
++.discordapp.net
++.discord.media
++.discordcdn.com
+# --- Signal ---
++.signal.org
++.whispersystems.org
++.signal.art
+# --- Line ---
++.line.me
++.line-apps.com
++.line-scdn.net
++.line.naver.jp
++.liffsdk.line-scdn.net
+# --- Skype ---
++.skype.com
++.skype.net
++.sfbassets.com
++.lync.com
+# --- Snapchat ---
++.snapchat.com
++.snap.com
++.sc-cdn.net
++.sc-jpl.com
+# --- TikTok (国际版) ---
++.tiktok.com
++.tiktokcdn.com
++.tiktokv.com
++.musical.ly
++.byteoversea.com
++.ibytedtos.com
++.pstatp.com
+# --- Threads ---
++.threads.net

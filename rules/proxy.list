@@ -1,0 +1,429 @@
+# ============================================================================
+# 代理规则 (proxy.list)
+# 用途: 走代理的域名
+# 来源: Y-clash dl.list + Yjhermes 需VPN的BT站点 + Aethersailor PT规则
+# 更新: AI 自动维护，人工可通过 PR 补充
+# ============================================================================
+
+# --- 搜索 API - 国外服务 (需代理) ---
+# Brave Search - SSL 连接失败，必须代理
+DOMAIN-SUFFIX,api.search.brave.com
+DOMAIN-SUFFIX,search.brave.com
+DOMAIN-SUFFIX,brave.com
+# Parallel Search - 国外服务
+DOMAIN-SUFFIX,search.parallel.ai
+DOMAIN-SUFFIX,parallel.ai
+# DuckDuckGo - 国外搜索引擎
+DOMAIN-SUFFIX,duckduckgo.com
+DOMAIN-SUFFIX,duck.co
+# You.com - 国外 AI 搜索
+DOMAIN-SUFFIX,ydc-index.io
+DOMAIN-SUFFIX,you.com
+# SerpApi - Google 搜索代理
+DOMAIN-SUFFIX,serpapi.com
+# Exa - 神经搜索引擎
+DOMAIN-SUFFIX,api.exa.ai
+DOMAIN-SUFFIX,exa.ai
+# Serper - Google 搜索 API
+DOMAIN-SUFFIX,google.serper.dev
+DOMAIN-SUFFIX,serper.dev
+# Tavily - AI 搜索 API
+DOMAIN-SUFFIX,api.tavily.com
+DOMAIN-SUFFIX,tavily.com
+# Firecrawl - 搜索+爬取
+DOMAIN-SUFFIX,api.firecrawl.dev
+DOMAIN-SUFFIX,firecrawl.dev
+# scrape.do - 网页爬取
+DOMAIN-SUFFIX,api.scrape.do
+DOMAIN-SUFFIX,scrape.do
+# Linkup - 搜索 API
+DOMAIN-SUFFIX,getsearch.linkup.so
+DOMAIN-SUFFIX,linkup.so
+# Anysearch - 多源聚合搜索
+DOMAIN-SUFFIX,api.anysearch.com
+DOMAIN-SUFFIX,anysearch.com
+# TG 搜索相关
+DOMAIN-SUFFIX,tgramsearch.com
+DOMAIN-SUFFIX,tgstat.com
+DOMAIN-SUFFIX,telegago.com
+# 网盘搜索
+DOMAIN-SUFFIX,pansou.com
+DOMAIN-SUFFIX,mipan.so
+DOMAIN-SUFFIX,miaopan.cc
+# --- 搜索 API - 国外服务结束 ---
+
+# --- VRChat 核心业务 ---
+DOMAIN-SUFFIX,vrchat.com
+DOMAIN-SUFFIX,vrchat.cloud
+DOMAIN-SUFFIX,vrc.sh
+DOMAIN-SUFFIX,api.vrchat.cloud
+DOMAIN-SUFFIX,pipeline.vrchat.cloud
+
+# --- VRChat 资源与 CDN ---
+DOMAIN-SUFFIX,assets.vrchat.com
+DOMAIN-KEYWORD,cloudfront
+DOMAIN-SUFFIX,akamaized.net
+
+# --- VRChat 视频播放器 ---
+DOMAIN-SUFFIX,vrcdn.live
+DOMAIN-SUFFIX,vrcdn.video
+DOMAIN-SUFFIX,vrcdn.cloud
+DOMAIN-SUFFIX,topaz.chat
+DOMAIN-SUFFIX,ttvnw.net
+DOMAIN-KEYWORD,googlevideo
+
+# --- Bybit 官方网站、REST API 与 WebSocket ---
+# 官方文档：api/stream.bybit.com；区域入口见 Bybit V5 API 文档。
+DOMAIN-SUFFIX,bybit.com
+DOMAIN-SUFFIX,bytick.com
+DOMAIN-SUFFIX,bybit.kz
+DOMAIN-SUFFIX,bybit.tr
+DOMAIN-SUFFIX,bybit.id
+DOMAIN-SUFFIX,bybitgeorgia.ge
+DOMAIN-SUFFIX,manepa.jp
+DOMAIN-SUFFIX,bybit.eu
+# 设备运行日志已观察到的 Bybit 应用精确 API/WS 入口；不扩展为整个 .biz 后缀。
+DOMAIN,api3.bybit.biz
+DOMAIN,ws2.bybit.biz
+# --- 通用代理站 ---
+DOMAIN-SUFFIX,audiomack.com
+DOMAIN-SUFFIX,api.audiomack.com
+DOMAIN-SUFFIX,truthsocial.com
+DOMAIN-SUFFIX,mozilla.org
+DOMAIN-SUFFIX,tactics.tools
+DOMAIN-SUFFIX,simplex.chat
+DOMAIN-SUFFIX,edtunnel.best
+DOMAIN-SUFFIX,workers.dev
+DOMAIN-SUFFIX,v2rayssr.com
+DOMAIN-SUFFIX,cults3d.com
+DOMAIN-SUFFIX,tripo3d.ai
+DOMAIN-SUFFIX,theyashotel.com
+DOMAIN-SUFFIX,archive.is
+DOMAIN-SUFFIX,softonic.cn
+DOMAIN-SUFFIX,reddit.com
+DOMAIN-SUFFIX,greasyfork.org
+DOMAIN-SUFFIX,linux.do
+DOMAIN-SUFFIX,xdaforums.com
+DOMAIN-SUFFIX,fast.com
+DOMAIN-SUFFIX,ip.sb
+DOMAIN-SUFFIX,techpowerup.com
+DOMAIN-SUFFIX,4kvm.org
+
+# ============================================================================
+# BT / 磁力搜索 (国际热门，需代理)
+# 来源: Yjhermes 需VPN的BT站点
+# ============================================================================
+DOMAIN-SUFFIX,1337x.to
+DOMAIN-SUFFIX,1337x.eu
+DOMAIN-SUFFIX,1337x.gd
+DOMAIN-SUFFIX,1337x.is
+DOMAIN-SUFFIX,1337x.se
+DOMAIN-SUFFIX,1337x.so
+DOMAIN-SUFFIX,1337x.st
+DOMAIN-SUFFIX,1337x.ws
+DOMAIN-SUFFIX,yts.mx
+DOMAIN-SUFFIX,torrentgalaxy.to
+DOMAIN-SUFFIX,torrentgalaxy.mx
+DOMAIN-SUFFIX,kickasstorrents.to
+DOMAIN-SUFFIX,kickass.to
+DOMAIN-SUFFIX,kickasst.to
+DOMAIN-SUFFIX,rarbg.to
+DOMAIN-SUFFIX,rarbg.me
+DOMAIN-SUFFIX,iptorrents.com
+
+# ============================================================================
+# BT / 磁力搜索 (中文站备用域名，部分需代理)
+# 来源: Yjhermes 需VPN的BT站点
+# ============================================================================
+DOMAIN-SUFFIX,btbtdy.com
+DOMAIN-SUFFIX,bttiantang.com
+DOMAIN-SUFFIX,cilimao.net
+DOMAIN-SUFFIX,clg.im
+DOMAIN-SUFFIX,ciligou.top
+DOMAIN-SUFFIX,torrentkitty.app
+DOMAIN-SUFFIX,laowangfb.top
+DOMAIN-SUFFIX,bthaha.buzz
+DOMAIN-SUFFIX,xiongmao36.xyz
+DOMAIN-SUFFIX,sobt.io
+DOMAIN-SUFFIX,btmovi.co
+DOMAIN-SUFFIX,clttt.xyz
+
+# ============================================================================
+# BT / 磁力搜索 API 源
+# ============================================================================
+DOMAIN-SUFFIX,apibay.org
+DOMAIN-SUFFIX,magnetz.eu
+DOMAIN-SUFFIX,bitsearch.to
+DOMAIN-SUFFIX,bitsearch.eu
+DOMAIN-SUFFIX,knaben.org
+DOMAIN-SUFFIX,torrents-csv.com
+DOMAIN-SUFFIX,cilimo.com
+DOMAIN-SUFFIX,accel.li
+DOMAIN-SUFFIX,animetosho.org
+DOMAIN-SUFFIX,ibit.to
+
+# ============================================================================
+# BT / RSS / Torznab 源
+# ============================================================================
+DOMAIN-SUFFIX,dmhy.org
+DOMAIN-SUFFIX,dmhy.net
+DOMAIN-SUFFIX,share.dmhy.org
+DOMAIN-SUFFIX,showrss.info
+DOMAIN-SUFFIX,eztvx.to
+DOMAIN-SUFFIX,eztv.re
+DOMAIN-SUFFIX,eztv.ag
+DOMAIN-SUFFIX,eztv.ch
+DOMAIN-SUFFIX,eztv.it
+DOMAIN-SUFFIX,eztv.yt
+DOMAIN-SUFFIX,nyaa.si
+DOMAIN-SUFFIX,nyaa.net
+DOMAIN-SUFFIX,nyaa.land
+DOMAIN-SUFFIX,sukebei.nyaa.si
+
+# ============================================================================
+# BT / 磁力搜索站点
+# ============================================================================
+DOMAIN-SUFFIX,btdig.com
+DOMAIN-SUFFIX,btdb.io
+DOMAIN-SUFFIX,btdb.eu
+DOMAIN-SUFFIX,btdb.to
+DOMAIN-SUFFIX,bt4g.org
+DOMAIN-SUFFIX,bt4g.com
+DOMAIN-SUFFIX,btsec.org
+DOMAIN-SUFFIX,btbtt.me
+DOMAIN-SUFFIX,btgiga.cc
+DOMAIN-SUFFIX,bts.im
+
+DOMAIN-SUFFIX,solidtorrents.to
+DOMAIN-SUFFIX,solidtorrents.co
+DOMAIN-SUFFIX,solidtorrents.net
+DOMAIN-SUFFIX,torrentz2.nz
+DOMAIN-SUFFIX,torrentdownloads.me
+DOMAIN-SUFFIX,limetorrents.eu
+DOMAIN-SUFFIX,limetorrents.cc
+
+DOMAIN-SUFFIX,thepiratebay.org
+DOMAIN-SUFFIX,thepiratebay.zone
+DOMAIN-SUFFIX,piratebay.party
+DOMAIN-SUFFIX,pirateproxy.live
+
+DOMAIN-SUFFIX,torlock.com
+DOMAIN-SUFFIX,torlock2.com
+DOMAIN-SUFFIX,glodls.to
+DOMAIN-SUFFIX,gtdb.to
+DOMAIN-SUFFIX,glotorrents.to
+
+DOMAIN-SUFFIX,magnet-dl.com
+DOMAIN-SUFFIX,magnetdl.com
+DOMAIN-SUFFIX,isohunt.nz
+DOMAIN-SUFFIX,isohunt.to
+
+# ============================================================================
+# 俄区 / 老牌 BT / PT
+# ============================================================================
+DOMAIN-SUFFIX,rutracker.org
+DOMAIN-SUFFIX,rutracker.net
+DOMAIN-SUFFIX,rutracker.ru
+DOMAIN-SUFFIX,rutor.info
+DOMAIN-SUFFIX,rutor.is
+DOMAIN-SUFFIX,nnm-club.me
+DOMAIN-SUFFIX,nnmclub.to
+DOMAIN-SUFFIX,kinozal.guru
+DOMAIN-SUFFIX,kinozal.me
+DOMAIN-SUFFIX,kinozal.tv
+
+# ============================================================================
+# 动漫 / ACG 资源站
+# ============================================================================
+DOMAIN-SUFFIX,mikanani.me
+DOMAIN-SUFFIX,acg.rip
+DOMAIN-SUFFIX,bangumi.moe
+DOMAIN-SUFFIX,bangumi.tv
+DOMAIN-SUFFIX,bgm.tv
+DOMAIN-SUFFIX,anidb.net
+DOMAIN-SUFFIX,anilist.co
+DOMAIN-SUFFIX,kitsu.io
+DOMAIN-SUFFIX,myanimelist.net
+DOMAIN-SUFFIX,tokyotosho.info
+DOMAIN-SUFFIX,subsplease.org
+DOMAIN-SUFFIX,shanaproject.com
+
+# ============================================================================
+# 影视 / 字幕 / 媒体
+# ============================================================================
+DOMAIN-SUFFIX,yts.mx
+DOMAIN-SUFFIX,psarips.to
+DOMAIN-SUFFIX,pahe.in
+DOMAIN-SUFFIX,pahe.li
+DOMAIN-SUFFIX,themoviedb.org
+DOMAIN-SUFFIX,tmdb.org
+DOMAIN-SUFFIX,thetvdb.com
+DOMAIN-SUFFIX,imdb.com
+DOMAIN-SUFFIX,fanart.tv
+DOMAIN-SUFFIX,opensubtitles.com
+DOMAIN-SUFFIX,opensubtitles.org
+DOMAIN-SUFFIX,subscene.com
+DOMAIN-SUFFIX,pianyuan.la
+
+# ============================================================================
+# 游戏 / Repacks
+# ============================================================================
+DOMAIN-SUFFIX,fitgirl-repacks.co
+DOMAIN-SUFFIX,fitgirl-repacks.site
+DOMAIN-SUFFIX,dodi-repack.site
+DOMAIN-SUFFIX,skidrowreloaded.com
+DOMAIN-SUFFIX,gog-games.com
+DOMAIN-SUFFIX,gog-games.to
+DOMAIN-SUFFIX,igg-games.com
+DOMAIN-SUFFIX,steamrip.com
+
+# ============================================================================
+# 学术 / Linux Torrents
+# ============================================================================
+DOMAIN-SUFFIX,academictorrents.com
+DOMAIN-SUFFIX,linuxtracker.org
+DOMAIN-SUFFIX,distroshare.com
+DOMAIN-SUFFIX,fosshub.com
+
+# ============================================================================
+# 常见 Tracker 域名
+# ============================================================================
+DOMAIN-SUFFIX,opentrackr.org
+DOMAIN-SUFFIX,open.stealth.si
+DOMAIN-SUFFIX,stealth.si
+DOMAIN-SUFFIX,dler.org
+DOMAIN-SUFFIX,tracker.dler.org
+DOMAIN-SUFFIX,torrent.eu.org
+DOMAIN-SUFFIX,arenabg.com
+DOMAIN-SUFFIX,coppersurfer.tk
+DOMAIN-SUFFIX,explodie.org
+DOMAIN-SUFFIX,desync.com
+DOMAIN-SUFFIX,demonii.si
+DOMAIN-SUFFIX,mgtracker.org
+DOMAIN-SUFFIX,publictracker.xyz
+DOMAIN-SUFFIX,tracker.openbittorrent.com
+DOMAIN-SUFFIX,tracker.opentrackr.org
+DOMAIN-SUFFIX,tracker.torrent.eu.org
+DOMAIN-SUFFIX,open.trackerlist.xyz
+DOMAIN-SUFFIX,nyaa.tracker.wf
+DOMAIN-SUFFIX,bt.poletracker.org
+DOMAIN-SUFFIX,torrentclub.online
+DOMAIN-SUFFIX,torrentsmd.com
+
+# ============================================================================
+# 自定义代理域名
+# ============================================================================
+DOMAIN,so.252035.xyz
+
+# idcflare: 强制走代理，规避错误 DNS/IPv6/漏网之鱼导致证书 CN 不匹配
+DOMAIN-SUFFIX,idcflare.com
+
+# Pico XR/VR 全平台走代理（线上+线下）
+DOMAIN-SUFFIX,picoxr.com
+DOMAIN-SUFFIX,picovr.com
+
+# IProyal: 代理平台，走代理访问
+DOMAIN-SUFFIX,iproyal.cn
+
+# ============================================================================
+# 社交 / 聊天软件 (需代理)
+# 来源: danuhdw/openclash-config + helmiau/clashrules + 综合整理
+# ============================================================================
+
+# --- Facebook + Messenger ---
+DOMAIN-SUFFIX,facebook.com
+DOMAIN-SUFFIX,facebook.net
+DOMAIN-SUFFIX,fbcdn.net
+DOMAIN-SUFFIX,fb.com
+DOMAIN-SUFFIX,fbcdn.com
+DOMAIN-SUFFIX,fbsbx.com
+DOMAIN-SUFFIX,fbwat.ch
+DOMAIN-SUFFIX,fb.watch
+DOMAIN-SUFFIX,messenger.com
+DOMAIN-SUFFIX,m.me
+DOMAIN-SUFFIX,facebookmail.com
+DOMAIN-SUFFIX,internet.org
+# --- Instagram ---
+DOMAIN-SUFFIX,instagram.com
+DOMAIN-SUFFIX,cdninstagram.com
+DOMAIN-SUFFIX,ig.me
+# --- X / Twitter ---
+DOMAIN-SUFFIX,x.com
+DOMAIN-SUFFIX,twitter.com
+DOMAIN-SUFFIX,t.co
+DOMAIN-SUFFIX,twimg.com
+DOMAIN-SUFFIX,twttr.com
+DOMAIN-SUFFIX,twitteroauth.com
+DOMAIN-SUFFIX,twitterstat.us
+# --- WhatsApp ---
+DOMAIN-SUFFIX,whatsapp.com
+DOMAIN-SUFFIX,whatsapp.net
+DOMAIN-SUFFIX,wa.me
+DOMAIN-SUFFIX,whatsapp.cc
+# --- Discord ---
+DOMAIN-SUFFIX,discord.com
+DOMAIN-SUFFIX,discord.gg
+DOMAIN-SUFFIX,discordapp.com
+DOMAIN-SUFFIX,discordapp.net
+DOMAIN-SUFFIX,discord.media
+DOMAIN-SUFFIX,discordcdn.com
+# --- Signal ---
+DOMAIN-SUFFIX,signal.org
+DOMAIN-SUFFIX,whispersystems.org
+DOMAIN-SUFFIX,signal.art
+# --- Line ---
+DOMAIN-SUFFIX,line.me
+DOMAIN-SUFFIX,line-apps.com
+DOMAIN-SUFFIX,line-scdn.net
+DOMAIN-SUFFIX,line.naver.jp
+DOMAIN-SUFFIX,liffsdk.line-scdn.net
+# --- Skype ---
+DOMAIN-SUFFIX,skype.com
+DOMAIN-SUFFIX,skype.net
+DOMAIN-SUFFIX,sfbassets.com
+DOMAIN-SUFFIX,lync.com
+# --- Snapchat ---
+DOMAIN-SUFFIX,snapchat.com
+DOMAIN-SUFFIX,snap.com
+DOMAIN-SUFFIX,sc-cdn.net
+DOMAIN-SUFFIX,sc-jpl.com
+# --- TikTok (国际版) ---
+DOMAIN-SUFFIX,tiktok.com
+DOMAIN-SUFFIX,tiktokcdn.com
+DOMAIN-SUFFIX,tiktokv.com
+DOMAIN-SUFFIX,musical.ly
+DOMAIN-SUFFIX,byteoversea.com
+DOMAIN-SUFFIX,ibytedtos.com
+DOMAIN-SUFFIX,pstatp.com
+# --- Threads ---
+DOMAIN-SUFFIX,threads.net
+
+# AgentRouter: AI 路由服务，走代理访问
+DOMAIN-SUFFIX,agentrouter.org
+
+# --- Manus AI（官方站点/API） ---
+DOMAIN-SUFFIX,manus.im
+DOMAIN-SUFFIX,open.manus.ai
+
+# --- PikPak 云盘（官方域名 + API + 迅雷CDN + 下载CDN关键词） ---
+# 核心域名（含 access/api/config/user 等子域）
+DOMAIN-SUFFIX,mypikpak.com
+DOMAIN-SUFFIX,mypikpak.net
+DOMAIN-SUFFIX,pikpak.me
+DOMAIN-SUFFIX,pikpakdrive.com
+DOMAIN-SUFFIX,pikpak.io
+DOMAIN-SUFFIX,pickpackapp.com
+# 迅雷 CDN 节点（PikPak 离线下载底层依赖迅雷）
+DOMAIN-SUFFIX,dlandroid.rcv.sandai.net
+DOMAIN-SUFFIX,hub5idx.v6.shub.sandai.net
+DOMAIN-SUFFIX,hub5pn.wap.sandai.net
+DOMAIN-SUFFIX,hub5pnc.sandai.net
+DOMAIN-SUFFIX,hub5pr.v6.phub.sandai.net
+DOMAIN-SUFFIX,hubciddata.sandai.net
+# 下载 CDN 关键词（PikPak 离线下载完成后的文件分发域名）
+DOMAIN-KEYWORD,dl-a10b-
+DOMAIN-KEYWORD,dl-z01a-
+
+# --- GoFile 文件分享/网盘（官方域 + CDN 子域 + 上传下载节点） ---
+DOMAIN-SUFFIX,gofile.io
+DOMAIN-SUFFIX,gofile.com

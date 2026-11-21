@@ -1,0 +1,16 @@
+# ============================================================================
+# 屏蔽规则 (block.list)
+# 用途: 广告/追踪/屏蔽的域名
+# 更新: AI 自动维护
+# ============================================================================
+
+# --- VR 设备更新/日志拦截 ---
+DOMAIN-SUFFIX,america.vrdesktop.net
+DOMAIN-SUFFIX,europe.vrdesktop.net
+
+# --- 字节跳动广告与监控 ---
+DOMAIN-SUFFIX,ad.toutiao.com
+DOMAIN-SUFFIX,ad.byteali.com
+DOMAIN-SUFFIX,dm.bytedance.com
+DOMAIN-SUFFIX,is.snssdk.com
+DOMAIN-SUFFIX,mon.isnssdk.com

@@ -1,0 +1,30 @@
+payload:
+  # ============================================
+  # 搜索 API - 国内服务 (直连)
+  # ============================================
+  # 百度千帆 AI 搜索
+  - "+.qianfan.baidubce.com"
+  - "+.baidubce.com"
+  # 秘塔搜索
+  - "+.metaso.cn"
+  # Bocha 博查
+  - "+.bochaai.com"
+  # ============================================
+  - "+.signalr.net"
+  - "+.service.signalr.net"
+  - "+.jxemall.com"
+  - "+.bambulab.com"
+  - "+.369163.xyz"
+  - "+.369529.xyz"
+  - "+.369696.xyz"
+  - "+.cn.wzjself.org"
+  - "+.180txt.cn"
+  - "+.bt.byr.cn"
+  - "+.bt.dlut.edu.cn"
+  - "+.bt.huawei.com"
+  - "+.btbtt.11.com"
+  - "+.camoe.cn"
+  - "+.hao4k.cn"
+  - "+.hao4k.com"
+  - "+.hust.edu.cn"
+  - "+.lizi.tv"
